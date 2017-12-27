@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<string.h>
+#include "quickmafs.h"
+
+int main()
+{
+    char infix[256],postfix[256];
+    printf("Trying 9+10*(8+2)...\n");
+    strcpy(infix, "9+10*(8+2)"); 
+    infix_to_postfix(infix,postfix);
+    printf("RPN expression: %s\n",postfix);
+} 
